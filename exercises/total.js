@@ -9,6 +9,13 @@
 
 //* Begin of tests
 const assert = require('assert')
+const total = (arr) => {
+    let result = 0
+    for (let a = 0; a < arr.length ; a++) {
+        result += arr[a]
+    }
+    return result
+}
 
 assert.strictEqual(typeof total, 'function')
 assert.strictEqual(total.length, 1)

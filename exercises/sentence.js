@@ -9,6 +9,14 @@
 
 //* Begin of tests
 const assert = require('assert')
+const sentence = (arr) => {
+    let str = ""
+    for (let word in arr) {
+        str += arr[word] + " "
+    }
+    str = str.substr(0, str.length - 1)
+    return str
+}
 
 assert.strictEqual(typeof sentence, 'function')
 assert.strictEqual(sentence.length, 1)

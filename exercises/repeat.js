@@ -8,6 +8,14 @@
  *
  */
 
+const repeat = (str, numb) => {
+    let result = ""
+    for (let i = 0; i < numb; i++) {
+        result += str
+    }
+    return result
+}
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -6,7 +6,21 @@
  * and in lowercase for the rest of the string
  *
  */
-
+const capitalize = (str) => {
+    let iteration = 0
+    let result = ""
+    for (let letter of str) {
+        if (iteration === 0) {
+            letter = letter.toUpperCase()
+            result += letter
+        } else {
+            letter = letter.toLowerCase()
+            result += letter
+        }
+        iteration++
+    }
+    return result
+}
 
 //* Begin of tests
 const assert = require('assert')
